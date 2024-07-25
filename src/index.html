@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel's Birthday</title>
+    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+    <!--Header-->
+    <header class="header">
+        <a class="header__brand" href="#">HOME</a>
+    </header>
+    <!--Section with the birthday timer-->
+    <section class="timer">
+        <div class="container">
+            <h1 class="timer__title">DANIEL'S BIRTHDAY</h1><span id="counter"></span>
+            <a class="timer__btn" href="#">
+                BUY DANIEL A PRESENT
+            </a>
+        </div>
+    </section>
 
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/_header-hide.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>

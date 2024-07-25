@@ -1,0 +1,30 @@
+@use '_var';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 16px;
+    text-align: center;
+    background-color: var.$bgColor;
+    transition: background-color, .5s ease;
+
+
+    &--is-hidden {
+        background-color: var.$bgColor;
+
+        .header {
+            &__brand {
+                opacity: 0;
+                visibility: 0;
+                transition: opacity, .5s ease;
+            }
+        }
+    }
+
+    &__brand {
+        color: var.$textColor;
+        transition: opacity, .5s ease;
+    }
+}
