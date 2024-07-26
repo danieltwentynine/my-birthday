@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     })
 
+    
+    
+
 })
 
 function hideHeaderElement() {

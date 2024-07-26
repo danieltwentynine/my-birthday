@@ -8,36 +8,53 @@
     flex-direction: column;
     justify-content: center;
 
-    &__title {
-        padding: 16px;
-    }
-
-    &__btn {
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        text-align: center;
-        white-space: nowrap;
-        max-width: 250px;
-        width: 100%;
-        margin: 20px auto;
-        font-weight: bold;
-        padding: 16px;
-        border: 2px solid var.$textColor;
-        border-radius: 30px;
-        background-image: linear-gradient(to bottom right, var.$blue, var.$green);
-        color: var.$textColor;
-        transition: all 1.5s;
-
-        &:hover {
-            filter: hue-rotate(90deg);
-            transform: scale(1.05);
-            box-shadow:10px 10px 10px rgba(0,0,0,0.5);
+    &__pics {
+        &__me {
+            display: inline-block;
+            max-width: 120px;
+            border-radius: 16px;
+            margin: 0 24px;
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 
             @media (max-width: 640px) {
-                filter: none;
-                transform: none;
-                box-shadow: none;
+                max-width: 80px;
+            }
+        }
+    }
+
+
+    &__time {
+        &__title {
+            padding: 16px;
+        }
+    
+        &__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            text-align: center;
+            white-space: nowrap;
+            max-width: 250px;
+            width: 100%;
+            margin: 20px auto;
+            font-weight: bold;
+            padding: 16px;
+            border: 2px solid var.$textColor;
+            border-radius: 30px;
+            background-image: linear-gradient(to bottom right, var.$blue, var.$green);
+            color: var.$textColor;
+            transition: all 1.5s;
+    
+            &:hover {
+                filter: hue-rotate(90deg);
+                transform: scale(1.05);
+                box-shadow:10px 10px 10px rgba(0,0,0,0.5);
+    
+                @media (max-width: 640px) {
+                    filter: none;
+                    transform: none;
+                    box-shadow: none;
+                }
             }
         }
     }
