@@ -33,6 +33,12 @@
             filter: hue-rotate(90deg);
             transform: scale(1.05);
             box-shadow:10px 10px 10px rgba(0,0,0,0.5);
+
+            @media (max-width: 640px) {
+                filter: none;
+                transform: none;
+                box-shadow: none;
+            }
         }
     }
 }
