@@ -7,7 +7,7 @@
     z-index: 1;
     padding: 16px;
     text-align: center;
-    background-color: var.$headerColor;
+    background-color: var.$bgColor;
     transition: background-color, .5s ease;
 
 
@@ -15,6 +15,7 @@
         background-color: var.$bgColor;
 
         .header {
+            background-color: var.$headerColor;
             &__brand {
                 opacity: 0;
                 visibility: 0;
