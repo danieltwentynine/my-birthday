@@ -7,6 +7,11 @@
     .container--hobbies {
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        @media (max-width: 640px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .container {
@@ -19,21 +24,38 @@
         font-size: 40px;
         margin: 24px 0;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
+
+        @media (max-width: 640px) {
+            font-size: 20px;
+        }
     }
 
     .sugestion {
         text-align: center;
         margin-bottom: 40px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
+
+        @media (max-width: 640px) {
+            font-size: 12px;
+        }
     }
 
     .hobby {
         display: flex;
         justify-content: center;
-        padding: 100px;
+        padding: 50px;
+
+        @media (max-width: 640px) {
+            text-align: center;
+            display: block;
+        }
 
         &--reverse {
             flex-direction: row-reverse;
+
+            @media (max-width: 640px) {
+                flex-direction: none;
+            }
         }
 
         &__title {
@@ -43,8 +65,9 @@
             font-weight: bold;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
 
-            &:hover {
-                filter: hue-rotate(360deg);
+            @media (max-width: 640px) {
+                display: block;
+                font-size: 20px;
             }
         }
         &__image {
@@ -58,5 +81,10 @@
         margin-bottom: -40px;
         text-align: center;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
+
+        @media (max-width: 640px) {
+            font-size: 12px;
+            margin-top: 25px;
+        }
     }
 }

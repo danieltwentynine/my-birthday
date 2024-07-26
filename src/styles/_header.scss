@@ -10,6 +10,10 @@
     background-color: var.$bgColor;
     transition: background-color, .5s ease;
 
+    @media (max-width: 640px) {
+        display: none;
+    }
+
 
     &--is-hidden {
         background-color: var.$bgColor;
