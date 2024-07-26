@@ -1,12 +1,13 @@
 @use '_var';
 @use '_header';
 @use '_timer';
+@use '_hobbies';
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Marmelat', sans-serif;
     text-decoration: none;
     list-style: none;
 }

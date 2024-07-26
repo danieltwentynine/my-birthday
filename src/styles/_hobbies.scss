@@ -1,0 +1,62 @@
+@use '_var';
+
+.hobbies {
+    background-image: linear-gradient(to bottom right, var.$blue, var.$green);
+    padding: 80px 0;
+    
+    .container--hobbies {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        margin: 24px 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
+    }
+
+    .sugestion {
+        text-align: center;
+        margin-bottom: 40px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
+    }
+
+    .hobby {
+        display: flex;
+        justify-content: center;
+        padding: 100px;
+
+        &--reverse {
+            flex-direction: row-reverse;
+        }
+
+        &__title {
+            display: flex;
+            align-items: center;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
+
+            &:hover {
+                filter: hue-rotate(360deg);
+            }
+        }
+        &__image {
+            max-width: 120px;
+            filter: drop-shadow(2px 2px 4px #00000080);
+        }
+    }
+
+    .footer {
+        margin-top: 50px;
+        margin-bottom: -40px;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
+    }
+}
